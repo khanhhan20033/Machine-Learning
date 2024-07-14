@@ -1,0 +1,16 @@
+Thuật toán Minimax là một thuật toán tìm kiếm cây được sử dụng trong trò chơi hai người tương tác, trong đó mục tiêu là tối ưu hóa lợi ích cho một người chơi, giả sử đối thủ cũng chơi tối ưu. Dưới đây là mô tả chi tiết về cách thuật toán Minimax hoạt động:
+
+1.Xây dựng cây trò chơi (Game Tree):
+
+-Bắt đầu từ trạng thái ban đầu của trò chơi, thuật toán xây dựng một cây tìm kiếm trò chơi.
+-Mỗi nút trong cây đại diện cho một trạng thái của trò chơi, và các cạnh của nút là các nước đi có thể.
+2.Đánh giá các trạng thái (Evaluation Function):
+
+-Mỗi nút lá của cây tìm kiếm được đánh giá bằng một hàm đánh giá (evaluation function).
+-Hàm đánh giá thường dựa vào các tiêu chí như điểm số hoặc ước lượng lợi ích của trạng thái.
+3.Tìm kiếm tối ưu (Minimax Search):
+
+-Thuật toán Minimax sử dụng một chiến lược đệ quy để duyệt qua cây tìm kiếm trò chơi.
+-Tại mỗi nút, nếu là lượt của máy tính, thuật toán chọn nước đi tối ưu là nước đi dẫn đến trạng thái tốt nhất cho máy tính.
+-Nếu là lượt của người chơi, thuật toán chọn nước đi tối ưu là nước đi dẫn đến trạng thái tốt nhất cho người chơi.
+-Thuật toán Minimax thực hiện việc chọn nước đi tối ưu bằng cách lấy giá trị tối đa hoặc tối thiểu của các nút con tương ứng với lượt của máy tính hoặc người chơi.

@@ -1,0 +1,24 @@
+So sánh:
+Chiến lược tìm kiếm:
+
+BFS (Breadth-First Search): Tìm kiếm theo chiều rộng, duyệt qua tất cả các đỉnh lân cận của đỉnh hiện tại trước khi duyệt đến các đỉnh con của chúng.
+DFS (Depth-First Search): Tìm kiếm theo chiều sâu, duyệt xuống đến các đỉnh con của đỉnh hiện tại trước khi quay lại duyệt các đỉnh lân cận của đỉnh đó.
+Thứ tự duyệt đỉnh:
+
+BFS: Duyệt các đỉnh theo thứ tự cùng cấp, tức là duyệt qua tất cả các đỉnh ở cùng một khoảng cách từ đỉnh gốc trước khi di chuyển đến các đỉnh ở khoảng cách tiếp theo.
+DFS: Duyệt các đỉnh theo thứ tự theo đường sâu, tức là đi xuống một nhánh càng sâu càng nhanh trước khi quay lại và chuyển sang nhánh khác.
+Bộ nhớ sử dụng:
+
+BFS: Sử dụng một hàng đợi để duyệt các đỉnh, do đó, cần nhiều bộ nhớ hơn để lưu trữ tất cả các đỉnh lân cận của đỉnh hiện tại.
+DFS: Sử dụng một ngăn xếp để duyệt các đỉnh, do đó, sử dụng ít bộ nhớ hơn so với BFS.
+Đánh giá:
+Thời gian thực thi:
+
+Độ phức tạp thời gian của cả BFS và DFS là O(V + E), trong đó V là số lượng đỉnh và E là số lượng cạnh trong đồ thị. Tuy nhiên, thời gian thực thi thực tế có thể khác nhau tùy thuộc vào cấu trúc của đồ thị và điểm bắt đầu của tìm kiếm.
+Bộ nhớ sử dụng:
+
+BFS sử dụng nhiều bộ nhớ hơn do cần lưu trữ một hàng đợi với tất cả các đỉnh lân cận.
+DFS sử dụng ít bộ nhớ hơn do chỉ cần lưu trữ một ngăn xếp với các đỉnh.
+Biện luận:
+BFS thích hợp cho việc tìm kiếm đường đi ngắn nhất trong đồ thị không có trọng số hoặc có trọng số giống nhau.
+DFS thích hợp cho việc kiểm tra tính liên thông của đồ thị, tìm kiếm các thành phần liên thông, kiểm tra chu trình và các vấn đề liên quan đến cây.

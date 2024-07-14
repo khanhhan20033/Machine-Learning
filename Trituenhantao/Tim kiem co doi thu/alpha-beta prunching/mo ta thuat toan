@@ -1,0 +1,24 @@
+Thuật toán cắt tỉa Alpha-Beta là một kỹ thuật quan trọng trong tìm kiếm cây trò chơi, được sử dụng để cải thiện hiệu suất của thuật toán Minimax bằng cách loại bỏ các nút không cần thiết trong quá trình tìm kiếm. Dưới đây là mô tả chi tiết về cách thuật toán này hoạt động:
+
+A1.lpha và Beta:
+
+Trong quá trình tìm kiếm, thuật toán duyệt qua các nút của cây trò chơi.
+Alpha và Beta là hai giá trị lưu trữ giữa các nút trong cây.
+Alpha đại diện cho giá trị tốt nhất cho Max trên một con đường đã xem xét cho đến nay.
+Beta đại diện cho giá trị tốt nhất cho Min trên một con đường đã xem xét cho đến nay.
+2.Cắt tỉa:
+
+Khi thuật toán gặp một nút trong cây và nếu giá trị của nút đó đã vượt qua hoặc bằng Beta (đối với Min) hoặc nhỏ hơn hoặc bằng Alpha (đối với Max), thì không cần thiết phải tiếp tục tìm kiếm các nút con của nút hiện tại.
+Điều này bởi vì giá trị của nút hiện tại đã cho thấy nó không thể là một giải pháp tốt nhất cho bất kỳ người chơi nào và các nút con của nó sẽ không thay đổi kết quả tốt nhất đã biết.
+Do đó, mọi thử nghiệm tiếp theo trong cây có thể bị loại bỏ, hoặc "cắt tỉa", giúp giảm bớt số lượng nút cần phải xem xét.
+3.Thuật toán:
+
+Thuật toán cắt tỉa Alpha-Beta thực hiện tìm kiếm cây trò chơi theo cách tương tự như thuật toán Minimax.
+Tuy nhiên, trong quá trình tìm kiếm, nó sẽ kiểm tra giá trị Alpha và Beta để quyết định xem liệu nút tiếp theo có cần phải kiểm tra hay không.
+4.Hiệu quả:
+
+Cắt tỉa Alpha-Beta giúp loại bỏ các nút không cần thiết, giảm bớt số lượng nút cần phải xem xét.
+Do đó, nó cải thiện hiệu suất của thuật toán tìm kiếm, đặc biệt là trong các trò chơi có cây trò chơi lớn và phức tạp.
+5.Áp dụng:
+
+Thuật toán cắt tỉa Alpha-Beta được sử dụng rộng rãi trong trí tuệ nhân tạo, đặc biệt là trong trò chơi, nơi mà phải đánh giá nhiều lựa chọn có thể trong một thời gian ngắn.
